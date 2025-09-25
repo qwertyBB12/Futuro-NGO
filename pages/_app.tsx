@@ -1,8 +1,9 @@
-// pages/_app.tsx
+// /pages/_app.tsx
 import type { AppProps } from "next/app";
 import Head from "next/head";
+import "../styles/globals.css";
 
-export default function MyApp({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
@@ -31,15 +32,6 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           property="og:image:alt"
           content="Futuro — Where Global Impact Takes Shape"
         />
-        {/* Square fallback for WhatsApp/iMessage */}
-        <meta
-          property="og:image"
-          content="https://futuro.ngo/OG_Futuro_Square.png"
-        />
-        <meta property="og:image:width" content="1080" />
-        <meta property="og:image:height" content="1080" />
-
-        {/* Facebook App ID */}
         <meta property="fb:app_id" content="649863557855929" />
 
         {/* Twitter / X */}
@@ -55,7 +47,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         />
         <meta name="twitter:image" content="https://futuro.ngo/OG_Futuro.png" />
 
-        {/* Apple iMessage */}
+        {/* Apple iMessage / iOS */}
         <meta name="apple-mobile-web-app-title" content="Futuro" />
         <meta name="format-detection" content="telephone=no" />
 
