@@ -1,3 +1,4 @@
+// /pages/_document.tsx
 import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
@@ -5,16 +6,15 @@ export default function Document() {
     <Html lang="en">
       <Head>
         {/* Primary Meta Tags */}
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Futuro — Where Global Impact Takes Shape</title>
         <meta
           name="description"
           content="A platform uniting leaders, institutions, and projects across the Americas to design, fund, and scale social impact."
         />
 
-        {/* Open Graph / Facebook */}
-        <meta property="og:type" content="website" />
+        {/* Open Graph / Facebook / WhatsApp */}
         <meta property="og:url" content="https://futuro.ngo/" />
+        <meta property="og:type" content="website" />
         <meta
           property="og:title"
           content="Futuro — Where Global Impact Takes Shape"
@@ -23,30 +23,21 @@ export default function Document() {
           property="og:description"
           content="A platform uniting leaders, institutions, and projects across the Americas to design, fund, and scale social impact."
         />
-
-        {/* Landscape OG (FB, LinkedIn, X/Twitter) */}
-        <meta property="og:image" content="https://futuro.ngo/OG_Futuro.png" />
+        <meta
+          property="og:image"
+          content="https://futuro.ngo/og-image.png"
+        />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta
           property="og:image:alt"
-          content="Futuro — Global Impact visual identity"
+          content="Futuro — Where Global Impact Takes Shape"
         />
-
-        {/* Square fallback (WhatsApp, iMessage) */}
-        <meta
-          property="og:image"
-          content="https://futuro.ngo/OG_Futuro_Square.png"
-        />
-        <meta property="og:image:width" content="1080" />
-        <meta property="og:image:height" content="1080" />
-        <meta
-          property="og:image:alt"
-          content="Futuro — Global Impact square identity"
-        />
+        <meta property="fb:app_id" content="649863557855929" />
 
         {/* Twitter / X */}
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@YourHandle" />
         <meta
           name="twitter:title"
           content="Futuro — Where Global Impact Takes Shape"
@@ -57,11 +48,21 @@ export default function Document() {
         />
         <meta
           name="twitter:image"
-          content="https://futuro.ngo/OG_Futuro.png"
+          content="https://futuro.ngo/og-image.png"
         />
 
-        {/* Optional Facebook App ID (removes debugger warning, but safe to omit if no FB app) */}
-        {/* <meta property="fb:app_id" content="YOUR_APP_ID_HERE" /> */}
+        {/* Apple iMessage / iOS */}
+        <meta
+          name="apple-mobile-web-app-title"
+          content="Futuro"
+        />
+        <meta
+          name="format-detection"
+          content="telephone=no"
+        />
+
+        {/* Favicon */}
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <body>
         <Main />
