@@ -1,3 +1,9 @@
-/*
-  Content-Type: text/html; charset=UTF-8
-  Cache-Control: public, max-age=0, must-revalidate
+/OG_Futuro.png
+  Content-Type: image/png
+  Cache-Control: public, max-age=31536000
+  Access-Control-Allow-Origin: *
+
+/OG_Futuro_Square.png
+  Content-Type: image/png
+  Cache-Control: public, max-age=31536000
+  Access-Control-Allow-Origin: *
